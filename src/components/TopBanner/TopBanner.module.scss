@@ -1,0 +1,153 @@
+.container {
+ margin-top: 54px;
+ width: 100%;
+ background: linear-gradient(180deg, #101010 0%, #0B0B0B 100%);
+  height: 54px;
+ display: flex;
+ justify-content: space-between;
+
+ .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+ .middle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+  .circle {
+   margin: 12px;
+  }
+  .code,
+  .dateText {
+   color: white;
+   font-size: 16px;
+   font-weight: 400;
+   letter-spacing: 0.05px;
+   word-break: break-word;
+   display: flex;
+
+  }
+
+  .checkout {
+   color: white;
+   font-size: 16px;
+   font-weight: 400;
+   letter-spacing: 0.05px;
+   word-break: break-word;
+   margin-left: 3px;
+
+  }
+
+  .date {
+   color: white;
+   font-size: 16px;
+   font-weight: 600;
+  }
+
+  .discount {
+   color: #D7A830;
+   font-size: 16px;
+   font-weight: 600;
+   display: flex;
+   margin-left: 3px;
+  }
+ }
+
+ .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .menuIcon {
+   display: none;
+  }
+
+  .close {
+   margin-right: 12px;
+   margin-left: 12px;
+  }
+
+  .button {
+   color: #0B0B0B;
+   font-size: 16px;
+   font-weight: 500;
+   border: none;
+   word-wrap: break-word;
+   font-family: "Graphik LC ", sans-serif ;
+   cursor: pointer;
+   width: 100%;
+   padding: 10px 14px;
+   background: white;
+   border-radius: 100px;
+   backdrop-filter: blur(30px);
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   gap: 10px;
+
+  }
+
+ }
+
+ /* Styles for tablets */
+ @media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+  .middle {
+   .date,
+   .checkout{
+    display: none;
+   }
+  }
+
+  .right {
+   .button {
+    margin-right: 24px;
+   }
+   .close {
+    display: none;
+   }
+  }
+
+
+ }
+
+ @media only screen and (max-width: 667px) {
+
+  .left {
+   img {
+    width: 159px;
+    margin-left: -40px;
+   }
+  }
+
+  .middle {
+   .date,
+   .circle,
+   .code,
+   .checkout{
+    display: none;
+   }
+
+   .discount {
+    margin-left: 3px;
+   }
+  }
+
+  .right {
+   .menuIcon {
+    display: flex;
+    margin-right: 12px;
+   }
+   .close {
+    display: none;
+   }
+   .button {
+    display: none;
+   }
+  }
+ }
+}
